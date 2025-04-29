@@ -1,0 +1,25 @@
+{
+  "name": "whatsapp-minibot",
+  "version": "1.0.0",
+  "description": "WhatsApp minibot for pairing, status viewing, liking, and bio updates",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.6.0",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0",
+    "pino": "^8.1.0",
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "moment-timezone": "^0.5.43"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
