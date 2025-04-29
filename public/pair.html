@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Minibot</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <video id="bg-video" autoplay loop muted playsinline>
+    <source src="https://files.catbox.moe/r0p7j1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-fallback"></div>
+
+  <div class="container">
+    <div class="box" id="box">
+      <div id="text">
+        <i class="fa fa-user"></i>
+        <h3 class="centered-text">WhatsApp Minibot</h3>
+        <h6 class="centered-text">Enter your phone number to generate a pairing code.</h6>
+        <h6 class="centered-text">Made by Marisel</h6>
+        <div class="input-container">
+          <input placeholder="Eg 254740007567" type="number" id="number">
+          <button id="submit">ENTER</button>
+        </div>
+        <a id="waiting-message" class="centered-text" style="display: none;">Getting Code...</a>
+        <main id="pair"></main>
+        <div id="session-controls" style="display: none;">
+          <input type="text" id="session-id" placeholder="Enter Session ID">
+          <button id="connect-session">Connect</button>
+          <div id="status-list"></div>
+          <div>
+            <input type="text" id="bio" placeholder="New Bio">
+            <button id="update-bio">Update Bio</button>
+          </div>
+          <div>
+            <button id="toggle-autobio">Toggle Auto-Bio</button>
+            <span id="autobio-status">Auto-Bio: Unknown</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
